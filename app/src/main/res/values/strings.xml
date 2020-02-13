@@ -3,4 +3,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="workdays">Workdays</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_out">sign out</string>
+    <string name="google_client_id">1052180421987-fu8onqv3idts2sfb13l09r653t9o6b3t.apps.googleusercontent.com</string>
+    <string name="firestore_user_document_path">/users/%1$s</string>
+    <string name="firestore_workdays_collection_path">/users/%1$s/workdays</string>
+    <string name="cache_start">cache_start</string>
 </resources>

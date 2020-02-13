@@ -5,9 +5,9 @@ import androidx.lifecycle.AndroidViewModel
 import com.worke.data.source.DefaultWorkdayRepository
 
 class WorkdaysViewModel(app: Application) : AndroidViewModel(app) {
-    private val workdayRepository = DefaultWorkdayRepository.getRepository(app)
+    private val workdayRepository = DefaultWorkdayRepository.getRepository()
 
     fun getWorkdays() {
-
+        return workdayRepository.getWorkdays()
     }
 }
