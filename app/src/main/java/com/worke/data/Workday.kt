@@ -3,10 +3,11 @@ package com.worke.data
 import java.util.Date
 
 data class Workday(
-    var start: Date,
-    var end: Date,
-    var title: String,
-    var description: String
+    var time: Long?,
+    var date: Date?,
+    val displayDate: String?,
+    val displayTime: String?
 ) {
-    constructor() : this(Date(), Date(), "", "")
+    constructor(): this(null, null, "", "")
 }
+

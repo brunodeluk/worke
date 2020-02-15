@@ -10,4 +10,6 @@
     <string name="firestore_user_document_path">/users/%1$s</string>
     <string name="firestore_workdays_collection_path">/users/%1$s/workdays</string>
     <string name="cache_start">cache_start</string>
+    <string name="is_working">isWorking</string>
+    <string name="working">Working 👨‍💻</string>
 </resources>

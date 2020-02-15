@@ -3,6 +3,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp"
-    tools:context=".workdays.WorkdaysFragment"/>
+    android:layout_height="match_parent"
+    tools:context=".workdays.WorkdaysFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/onBackground"
+            android:textStyle="bold"
+            android:text="@string/workdays"
+            android:layout_alignBaseline="@id/is_working_chip"
+            android:layout_alignParentStart="true"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/is_working_chip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="0dp"
+            android:text="@string/working"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/onBackground"
+        android:text="February" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/workdays_rv"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
